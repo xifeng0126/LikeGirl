@@ -256,13 +256,6 @@
                         </a>
                     </li>
 
-                    <li class="side-nav-item">
-                        <a href="/admin/aboutSet.php" class="side-nav-link">
-                            <i class="dripicons-tags"></i>
-                            <span> 关于页面</span>
-                            <span class="menu-arrow"></span>
-                        </a>
-                    </li>
 
                     <li class="side-nav-item">
                         <a href="/admin/ipSet.php" class="side-nav-link">

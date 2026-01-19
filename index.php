@@ -36,17 +36,6 @@ include_once 'head.php';
                     class="card col-lg-4 col-sm-12 col-sm-x-12 flex-h <?php if ($text['Animation'] == "1") {
                         echo 'animated fadeInUp';
                     } ?>">
-                    <img src="Style/img/card/likegirl_card_3.svg" alt="">
-                    <div class="text">
-                        <span><a target="_self" href="about.php"><?php echo $text['card3'] ?></a></span>
-                        <p><?php echo $text['deci3'] ?></p>
-                    </div>
-                </div>
-                
-                <div
-                    class="card col-lg-4 col-sm-12 col-sm-x-12 flex-h <?php if ($text['Animation'] == "1") {
-                        echo 'animated fadeInUp';
-                    } ?>">
                     <img src="Style/img/card/likegirl_card_4.svg" alt="">
                     <div class="text">
                         <span><a target="_self" href="loveImg.php">恋爱相册</a></span>

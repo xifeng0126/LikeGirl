@@ -2,7 +2,6 @@
     session_start();
     
     include_once 'Nav.php';
-    include_once "LG_Info.php";
 ?>
 
 <div class="row">
