@@ -150,8 +150,7 @@
 </script>
 
 <footer class="footer footer-alt">
-    Copyright © 2022 Ki. && <a href="https://blog.kikiw.cn/index.php/archives/24/" target="_blank">Like_Girl</a> All
-    Rights Reserved.
+    Copyright © 2022-2025 Like_Girl All Rights Reserved.
 </footer>
 
 <!-- App js -->

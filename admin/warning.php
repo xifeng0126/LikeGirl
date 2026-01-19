@@ -139,8 +139,7 @@
 <!-- end page -->
 
 <footer class="footer footer-alt">
-    Copyright © 2022-<?php echo date("Y") ?> Ki. && <a href="https://blog.kikiw.cn/index.php/archives/52/" target="_blank">Like_Girl</a> All
-    Rights Reserved.
+    Copyright © 2022-<?php echo date("Y") ?> Like_Girl All Rights Reserved.
 </footer>
 
 <!-- App js -->

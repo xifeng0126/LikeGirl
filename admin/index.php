@@ -2,36 +2,10 @@
     session_start();
     
     include_once 'Nav.php';
-    $liuyan = "select * from leaving order by id desc limit 0,6";
-    $resliuyan = mysqli_query($connect, $liuyan);
     include_once "LG_Info.php";
 ?>
 
 <div class="row">
-    <div class="col-md-6 col-xl-4">
-        <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h5 class="text-muted font-weight-normal mt-0 text-truncate" title="Campaign Sent">留言祝福</h5>
-                        <h3 class="my-2 py-1"><?php echo $shu ?><i>条</i></h3>
-                    </div>
-                    <div class="col-6" style="text-align: center;">
-                        <svg t="1717913183813" class="icon" viewBox="0 0 1178 1024" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" p-id="1538" width="100" height="100">
-                            <path
-                                d="M1052.279486 606.582238c5.281913-43.119549 2.222694-86.401823-9.0981-128.631813-11.311152-42.2324-30.306511-81.239241-56.436431-115.946543-27.086979-35.965704-60.664853-65.659889-99.793436-88.252059-39.129789-22.590965-81.634601-36.822719-126.325948-42.298695-43.119549-5.280707-86.400618-2.222694-128.630607 9.0981-42.231195 11.320795-81.246474 30.302895-115.947748 56.436431-35.965704 27.088185-65.659889 60.664853-88.250854 99.794642-22.59217 39.129789-36.823924 81.634601-42.298696 126.324742-5.281913 43.119549-2.222694 86.401823 9.098101 128.631812s30.306511 81.239241 56.43643 115.946543c27.086979 35.965704 60.664853 65.659889 99.793437 88.25206 39.129789 22.590965 81.634601 36.822719 126.325948 42.298695 43.118344 5.280707 86.400618 2.222694 128.630607-9.098101 42.237222-11.317179 81.239241-30.306511 115.947748-56.43643 35.965704-27.086979 65.659889-60.664853 88.250854-99.794642 22.59217-39.129789 36.823924-81.634601 42.298695-126.324742z"
-                                fill="#FA6666" p-id="1539"></path>
-                            <path
-                                d="M869.263982 276.743541c-22.866994-53.825608-55.566156-102.225865-97.188642-143.839912-41.614047-41.622485-90.014304-74.312004-143.839912-97.188642C572.447485 12.017497 513.314651 0 452.489485 0s-119.958 12.017497-175.745944 35.714987c-53.824403 22.865788-102.225865 55.566156-143.838707 97.188642-41.614047 41.62369-74.322853 90.014304-97.188641 143.839912C12.017497 332.531484 0 391.664318 0 452.489485c0 60.823962 12.017497 119.958 35.714987 175.744738 22.866994 53.825608 55.566156 102.225865 97.189847 143.839912 41.622485 41.612842 90.014304 74.312004 143.838707 97.188641 55.787943 23.697491 114.920777 35.714987 175.745944 35.714988s119.958-12.017497 175.745943-35.714988c53.825608-22.866994 102.225865-55.566156 143.839912-97.188641 41.622485-41.62369 74.312004-90.014304 97.188642-143.839912 23.697491-55.786738 35.714987-114.920777 35.714987-175.744738 0-60.825167-12.017497-119.958-35.714987-175.745944zM268.467499 500.831884c-26.695235 0-48.342399-21.648369-48.342399-48.342399 0-26.695235 21.647164-48.343605 48.342399-48.343605 26.695235 0 48.342399 21.648369 48.3424 48.343605 0 26.69403-21.647164 48.342399-48.3424 48.342399z m184.021986 0c-26.695235 0-48.342399-21.648369-48.3424-48.342399 0-26.695235 21.647164-48.343605 48.3424-48.343605 26.695235 0 48.343605 21.648369 48.343604 48.343605 0 26.69403-21.648369 48.342399-48.343604 48.342399z m184.021985 0c-26.69403 0-48.342399-21.648369-48.3424-48.342399 0-26.695235 21.648369-48.343605 48.3424-48.343605 26.695235 0 48.343605 21.648369 48.343604 48.343605 0 26.69403-21.648369 48.342399-48.343604 48.342399z"
-                                fill="#FFCCCE" opacity=".9" p-id="1540"></path>
-                        </svg>
-                    </div>
-                </div> <!-- end row-->
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col -->
-
     <div class="col-md-6 col-xl-4">
         <div class="card">
             <div class="card-body">
@@ -83,75 +57,36 @@
         </div> <!-- end card -->
     </div> <!-- end col -->
 
-</div>
-<!-- end row -->
-<div class="row">
-    <div class="col-12">
+    <div class="col-md-6 col-xl-4">
         <div class="card">
             <div class="card-body">
-                <div class="row mb-2">
-                    <div class="col-lg-4">
-                        <div class="text-lg-right">
-                            <button type="button" class="btn btn-danger mb-2 mr-2"><i class="mdi mdi-basket mr-1"></i>
-                                最新留言
-                            </button>
-                        </div>
-                    </div><!-- end col-->
-                </div>
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <h5 class="text-muted font-weight-normal mt-0 text-truncate" title="Photos">恋爱相册</h5>
+                        <h3 class="my-2 py-1"><?php echo $imgnub ?><i>张</i></h3>
 
-                <div class="table-responsive">
-                    <table class="table table-centered mb-0">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>评论内容</th>
-                                <th>Date</th>
-                                <th>Name</th>
-                                <th>QQ</th>
-                                <th>IP</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            while ($info = mysqli_fetch_array($resliuyan)) {
-                                ?>
-                                <tr>
-                                    <td>
-                                        <div class="textHide index">
-                                            <?php echo escapeXSS($info['text']) ?>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <small class="text-muted"><?php echo date('Y-m-d H:i:s', $info['time']) ?>
-                                            <div class="color"><?php echo time_tran($info['time']) ?></div>
-                                        </small>
-                                    </td>
-                                    <td>
-                                        <h5><span class="badge badge-success-lighten"><i
-                                                    class="mdi mdi-account-circle mr-1 rihjt-0"></i>
-                                                <?php echo $info['name'] ?></span>
-                                        </h5>
-                                    </td>
-                                    <td>
-                                        <?php echo $info['QQ'] ?>
-                                    </td>
-                                    <td>
-                                        <h5>
-                                            <span
-                                                class="badge badge-danger-lighten"><?php if ($info['ip']) { ?><?php echo $info['ip'] ?><?php } else { ?>127.0.0.1<?php } ?></span>
-                                        </h5>
-                                    </td>
-                                </tr>
-                                <?php
-                            }
-                            ?>
+                    </div>
+                    <div class="col-6" style="text-align: center;">
+                        <svg t="1717913149788" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="1371" width="100" height="100">
+                            <path
+                                d="M896 128H128c-35.3 0-64 28.7-64 64v640c0 35.3 28.7 64 64 64h768c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64z m0 704H128V192h768v640z"
+                                fill="#87CEEB" p-id="1372"></path>
+                            <path
+                                d="M320 480c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96z m0-128c17.6 0 32 14.4 32 32s-14.4 32-32 32-32-14.4-32-32 14.4-32 32-32z"
+                                fill="#87CEEB" p-id="1373"></path>
+                            <path
+                                d="M832 736H192V608l128-128 128 128 256-256 128 128z"
+                                fill="#87CEEB" opacity=".9" p-id="1374"></path>
+                        </svg>
+                    </div>
+                </div> <!-- end row-->
+            </div> <!-- end card-body -->
+        </div> <!-- end card -->
+    </div> <!-- end col -->
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+<!-- end row -->
 
 <?php
 include_once 'Footer.php';

@@ -53,7 +53,7 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
                     toastr["success"]("更新登录信息成功！", "Like_Girl");
                     toastr["success"]("更新全局信息成功", "Like_Girl");
                     toastr["success"]("更新自定义内容成功", "Like_Girl");
-                } else if (res == 046) {
+                } else if (res == "046") {
                     toastr["error"]("更新登录信息失败！", "Like_Girl");
                     toastr["error"]("更新全局信息失败！", "Like_Girl");
                     toastr["error"]("更新自定义内容失败！", "Like_Girl");
@@ -95,7 +95,7 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
                 if (res == 13) {
                     toastr["success"]("基本信息修改成功！", "Like_Girl");
                     toastr["success"]("开关设置成功！", "Like_Girl");
-                } else if (res == 04) {
+                } else if (res == "04") {
                     toastr["error"]("基本信息修改失败！", "Like_Girl");
                     toastr["error"]("开关设置修改失败！", "Like_Girl");
                 } else {

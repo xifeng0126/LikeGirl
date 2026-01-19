@@ -1,15 +1,6 @@
 <!--
- * @Version：Like Girl 5.2.1-Stable
- * @Author: Ki.
- * @Date: 2025-09-03 00:00:00
- * @LastEditTime: 2025-09-03
- * @Description: 愿得一心人 白头不相离
- * @Document：https://blog.kikiw.cn/index.php/archives/52/
- * @Copyright (c) 2023 - 2025 by Ki All Rights Reserved. 
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Message：开发不易 版权信息请保留 (删除/修改作者版权的Dog请勿使用 感谢配合)
+ * @Version: Like Girl 5.2.1-Stable
+ * @Copyright (c) 2023 - 2025 by Ki All Rights Reserved.
 -->
 <?php
 error_reporting(0);
@@ -254,7 +245,6 @@ $Animation = $text['Animation'];
 <link href="https://fonts.googleapis.com/css?family=Concert+One|Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../Style/css/leaving.css?LikeGirl=<?php echo $version ?>">
 <link rel="stylesheet" href="../Style/css/index.css?LikeGirl=<?php echo $version ?>">
 <link rel="stylesheet" href="../Style/css/little.css?LikeGirl=<?php echo $version ?>">
 <link rel="stylesheet" href="../Style/css/about.css?LikeGirl=<?php echo $version ?>">
@@ -266,7 +256,6 @@ $Animation = $text['Animation'];
 <link rel="stylesheet" href="../Style/css/list.css?LikeGirl=<?php echo $version ?>">
 <link rel="stylesheet" href="../Style/toastr/toastr.css?LikeGirl=<?php echo $version ?>">
 <link rel="stylesheet" href="../Style/css/loadinglike.css?LikeGirl=<?php echo $version ?>">
-<script src="../Style/Font/font_leav/iconfont.js"></script>
 <script src="../Style/Font/font_leav/iconfont.js"></script>
 <script src="../Botui/botui.min.js"></script>
 <script src="../Style/js/vue.min.js"></script>
@@ -378,7 +367,7 @@ if ($diy['Pjaxkg'] == "1"):?>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
                 <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
                 <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
                 <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />

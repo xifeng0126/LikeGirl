@@ -18,7 +18,8 @@
     include_once 'connect.php';
     include_once 'Function.php';
     
-    $sql = "select * from login where user = '" . $_SESSION['loginadmin'] . "' ";
+    $user = mysqli_real_escape_string($connect, $_SESSION['loginadmin']);
+    $sql = "select * from login where user = '" . $user . "' ";
     $loginresult = mysqli_query($connect, $sql);
     if (mysqli_num_rows($loginresult)) {
         $login = mysqli_fetch_array($loginresult);
@@ -90,11 +91,6 @@
     </script>
     <?php
     //查询数据
-    //留言
-    $nub = "select count(id) as shu from leaving";
-    $res = mysqli_query($connect, $nub);
-    $leav = mysqli_fetch_array($res);
-    $shu = $leav['shu'];
     //点点滴滴
     $dian = "select count(id) as dian from article";
     $resdian = mysqli_query($connect, $dian);
@@ -110,8 +106,6 @@
     $resimg = mysqli_query($connect, $img);
     $loveImg = mysqli_fetch_array($resimg);
     $imgnub = $loveImg['img'];
-    $adminuser = "admin";
-    $adminpw = "love";
     //礼物管理
     $gift = "select count(id) as gift from gifts";
     $resgift = mysqli_query($connect, $gift);
@@ -215,15 +209,6 @@
                             <i class="dripicons-meter"></i>
                             <span class="badge badge-success float-right"><i class="dripicons-gear margin_0"></i></span>
                             <span> 基本设置 </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-                        <a href="/admin/leavingSet.php" class="side-nav-link">
-                            <i class="dripicons-view-apps"></i>
-                            <span> 留言管理
-                                <span class="badge badge-danger float-right"><?php echo $shu ?></span>
-                            </span>
                         </a>
                     </li>
 
